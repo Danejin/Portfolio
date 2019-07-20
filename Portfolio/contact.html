@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Autor" content="Bartosz Mikuła">
+        <meta name="robots" content="all" />
+        <meta name="description" content="portfolio">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link href="styl.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>Contact</h1>
+            </header>
+            <nav id="panelgora">
+                <a class="btn btn-primary" href="home.html" role="button">Home</a>
+                <a class="btn btn-primary" href="about.html" role="button">About Me</a>
+                <a class="btn btn-primary" href="portfolio.html" role="button">Portfolio</a>
+                <a class="btn btn-primary" href="blog.html" role="button">Blog</a>
+                <a class="btn btn-primary" href="contact.html" role="button">Contact</a>
+            </nav>
+            <aside id="panellewy">
+                <SCRIPT LANGUAGE="JavaScript">
+
+DayName = new Array(7);
+DayName[0] = "niedziela ";
+DayName[1] = "poniedziałek ";
+DayName[2] = "wtorek ";
+DayName[3] = "środa ";
+DayName[4] = "czwartek ";
+DayName[5] = "piątek ";
+DayName[6] = "sobota ";
+
+MonthName = new Array(12);
+MonthName[0] = "stycznia ";
+MonthName[1] = "lutego ";
+MonthName[2] = "marca ";
+MonthName[3] = "kwietnia ";
+MonthName[4] = "maja ";
+MonthName[5] = "czerwca ";
+MonthName[6] = "lipca ";
+MonthName[7] = "sierpnia ";
+MonthName[8] = "września ";
+MonthName[9] = "października ";
+MonthName[10] = "listopada ";
+MonthName[11] = "grudnia ";
+
+function getDateStr(){
+    var Today = new Date();
+    var WeekDay = Today.getDay();
+    var Month = Today.getMonth();
+    var Day = Today.getDate();
+    var Year = Today.getFullYear();
+
+    if(Year <= 99)
+        Year += 1900;
+
+    return DayName[WeekDay] + "," + " " + Day + " " + MonthName[Month] + ", " + Year;
+}
+
+</SCRIPT>
+<h3>
+<SCRIPT>document.write("Dzisiaj jest " + getDateStr());</SCRIPT>
+</h3>
+            </aside>
+            <main id="panelprawy">
+                <h2> Kontak</h2> <br> <br>
+                <p>Aby się umówić ze mną na sesję wypełnij formularz</p><br><br><br>
+                <form method="post" action="mailto:xyz@gmail.com?subject=sesja">
+                <label>Imię: <input type="text" name="imie"/></label><br>
+                <label>Nazwisko: <input type="text" name="nazwisko"/></label><br>
+                <label>Treść: <input type="text" name="wiadomosc"/></label><br>
+                <label><input type="submit"value="Wyslij"/>
+                <input type="reset"></label>
+                </form> <br> <br>
+                <p> W razie jakichkolwiek wątpliwości możesz napisać do mnie maila lub podejść do mojego biura :) </p> <br>
+                <address>
+                    <p> <a href="mailto:xyz@gmail.com">Bartosz Mikuła</a></p>
+                    <p> Sokolnicza 30, 55-555 Wrocław</p>
+                </address>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d626.1944887009915!2d17.019658729265345!3d51.11255684065872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc209f3a0623d%3A0x7d32f04e3a696be2!2sSokolnicza+30%2C+53-659+Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1563455314251!5m2!1spl!2spl" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                
+            </main>
+            <footer>
+                <p> Wszelkie prawa zastrzeżone </p>
+            </footer>
+        </div>
+    </body>
+</html>

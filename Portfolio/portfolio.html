@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Autor" content="Bartosz Mikuła">
+        <meta name="robots" content="all" />
+        <meta name="description" content="portfolio">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link href="styl.css" rel="stylesheet" type="text/css"/>
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>Portfolio</h1>
+            </header>
+            <nav id="panelgora">
+                <a class="btn btn-primary" href="home.html" role="button">Home</a>
+                <a class="btn btn-primary" href="about.html" role="button">About Me</a>
+                <a class="btn btn-primary" href="portfolio.html" role="button">Portfolio</a>
+                <a class="btn btn-primary" href="blog.html" role="button">Blog</a>
+                <a class="btn btn-primary" href="contact.html" role="button">Contact</a>
+            </nav>
+            <aside id="panellewy">
+                <SCRIPT LANGUAGE="JavaScript">
+
+DayName = new Array(7);
+DayName[0] = "niedziela ";
+DayName[1] = "poniedziałek ";
+DayName[2] = "wtorek ";
+DayName[3] = "środa ";
+DayName[4] = "czwartek ";
+DayName[5] = "piątek ";
+DayName[6] = "sobota ";
+
+MonthName = new Array(12);
+MonthName[0] = "stycznia ";
+MonthName[1] = "lutego ";
+MonthName[2] = "marca ";
+MonthName[3] = "kwietnia ";
+MonthName[4] = "maja ";
+MonthName[5] = "czerwca ";
+MonthName[6] = "lipca ";
+MonthName[7] = "sierpnia ";
+MonthName[8] = "września ";
+MonthName[9] = "października ";
+MonthName[10] = "listopada ";
+MonthName[11] = "grudnia ";
+
+function getDateStr(){
+    var Today = new Date();
+    var WeekDay = Today.getDay();
+    var Month = Today.getMonth();
+    var Day = Today.getDate();
+    var Year = Today.getFullYear();
+
+    if(Year <= 99)
+        Year += 1900;
+
+    return DayName[WeekDay] + "," + " " + Day + " " + MonthName[Month] + ", " + Year;
+}
+
+</SCRIPT>
+<h3>
+<SCRIPT>document.write("Dzisiaj jest " + getDateStr());</SCRIPT>
+</h3>
+            </aside>
+            <main id="panelprawy">
+                <h2> Moje prace </h2>
+                <p> Tutaj można zobaczyć parę przykładowych moich prac. </p> <br>
+                <div>
+                <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a>
+                <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="" /></a>
+                <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-2.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-2.jpg" alt=""/></a>
+                <br>
+                <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a>
+                <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a>
+                <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
+    
+                </div>
+            </main>
+            <footer>
+                <p> Wszelkie prawa zastrzeżone </p>
+            </footer>
+        </div>
+        <script src="js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
+    </body>
+</html>

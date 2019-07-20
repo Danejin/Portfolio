@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Autor" content="Bartosz Mikuła">
+        <meta name="robots" content="all" />
+        <meta name="description" content="portfolio">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link href="styl.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>Blog</h1>
+            </header>
+            <nav id="panelgora">
+                <a class="btn btn-primary" href="home.html" role="button">Home</a>
+                <a class="btn btn-primary" href="about.html" role="button">About Me</a>
+                <a class="btn btn-primary" href="portfolio.html" role="button">Portfolio</a>
+                <a class="btn btn-primary" href="blog.html" role="button">Blog</a>
+                <a class="btn btn-primary" href="contact.html" role="button">Contact</a>
+            </nav>
+            <aside id="panellewy">
+                <SCRIPT LANGUAGE="JavaScript">
+
+DayName = new Array(7);
+DayName[0] = "niedziela ";
+DayName[1] = "poniedziałek ";
+DayName[2] = "wtorek ";
+DayName[3] = "środa ";
+DayName[4] = "czwartek ";
+DayName[5] = "piątek ";
+DayName[6] = "sobota ";
+
+MonthName = new Array(12);
+MonthName[0] = "stycznia ";
+MonthName[1] = "lutego ";
+MonthName[2] = "marca ";
+MonthName[3] = "kwietnia ";
+MonthName[4] = "maja ";
+MonthName[5] = "czerwca ";
+MonthName[6] = "lipca ";
+MonthName[7] = "sierpnia ";
+MonthName[8] = "września ";
+MonthName[9] = "października ";
+MonthName[10] = "listopada ";
+MonthName[11] = "grudnia ";
+
+function getDateStr(){
+    var Today = new Date();
+    var WeekDay = Today.getDay();
+    var Month = Today.getMonth();
+    var Day = Today.getDate();
+    var Year = Today.getFullYear();
+
+    if(Year <= 99)
+        Year += 1900;
+
+    return DayName[WeekDay] + "," + " " + Day + " " + MonthName[Month] + ", " + Year;
+}
+
+</SCRIPT>
+<h3>
+<SCRIPT>document.write("Dzisiaj jest " + getDateStr());</SCRIPT>
+</h3>
+            </aside>
+            <main id="panelprawy">
+                <h2> Blog dla początkujących </h2> <br> <br>
+                <article>
+                    <h3>Jak zacząć przygode z fotografią?</h3>
+                    <p> Jako początkujący fotograf pamiętaj o jednej rzeczy. Nie wydawaj masy pieniędzy na sprzęt fotograficzny.
+                        Dobry i zarazem drogi sprzęt nie daje ci gwarancji na zrobienie dobrego zdjęcia. Nawet słaby sprzęt w rękach
+                        dobrego fotografa potrafi czynić cuda. Najpierw naucz się podstaw takich jak dobre pozycjonowanie kadru oraz modela 
+                        o ile takiego posiadasz, odpowiedni dobór oświetlenia (tak to ma BARDZO duże znaczenie w zależności jaki typ zdjęcia
+                        chcesz zrobić) itp. Warto na początku przeczytać różne poradniki <a href="https://duze-podroze.pl/jak-nauczyc-sie-fotografowac/" target="_blank">LINK</a>. 
+                        Pamiętaj też żeby nie bać się eksperymentować. W końcu każdy na błędach się uczy :). Warto też jest poszukać programów
+                        do obórbki zdjęć. Tutaj zamieszczam <a href="https://www.fotomaniak.pl/142050/najlepsze-darmowe-programy-do-obrobki-zdjec/" target="_blank">LINK</a>
+                        do listy popularnych darmowych programów do obróbek. Dopiero jak czujesz się na siłach w tym zakresie możesz pomyśleć o wydaniu 
+                        pieniędzy na taki program.</p> 
+                </article>
+            </main>
+            <footer>
+                <p> Wszelkie prawa zastrzeżone </p>
+            </footer>
+        </div>
+    </body>
+</html>

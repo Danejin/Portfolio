@@ -1,0 +1,93 @@
+* {
+margin: 0;
+padding: 0;
+border: 0;
+line-height: 1.4em;
+vertical-align: baseline;
+text-decoration: none;
+outline: 0;
+box-sizing: border-box;
+}
+
+.container {
+  width: 40%;
+  background-color: white;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.komercyjne {width: 90%; background-color: #4CAF50;}
+.krajobrazy {width: 80%; background-color: #2196F3;}
+.obrobka {width: 80%; background-color: #aa00ff;}
+.wydarzenia {width: 65%; background-color: #f44336;}
+.modeling {width: 60%; background-color: #808080;}
+
+#container
+{
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+font-weight: inherit;
+}
+
+#panelgora 
+{
+  padding: 10px;
+  background-color: #6f851e;
+  font-style: italic;
+  text-align: center;
+  font-weight: inherit;
+  color: white;
+	}
+	
+	
+header 
+{
+padding: 10px;
+background-color: #6f851e;
+font-style: italic;
+text-align: center;
+font-weight: inherit;
+color: white;
+}
+	
+	
+#panellewy
+{
+float: left;
+color:white;
+background-color: #7C9421;
+width: 25%;
+min-height: 750px;
+text-align:center;
+}
+	
+	
+#panelprawy
+{
+float: left;
+height: 750px;
+width: 75%;
+text-align:center;
+}
+	
+	
+footer 
+{
+padding: 10px;
+background-color: #6f851e;
+text-align: center;
+color: white;
+font-style: italic;
+font-weight: inherit;
+clear: both;
+}
+	
+	
+a
+{color: blue;}
